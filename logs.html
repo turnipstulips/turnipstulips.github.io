@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logs — Revision history</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* additional log page specific */
+    .log-full {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .log-full-entry {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #eee;
+    }
+    .log-full-title {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .log-full-content {
+      font-family: 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="nav-wiki">
+  <a href="index.html">HOME</a> | 
+  <a href="directory.html">RAW_DIRECTORY</a> | 
+  <a href="logs.html">LOGS</a> | 
+  <a href="about.html">ABOUT_</a>
+</div>
+
+<div class="log-full">
+  <div class="wiki-header">Log archive / revision history</div>
+
+  <div class="log-full-entry">
+    <div class="log-full-title">2026-04-24 — Feedback loop oscillation</div>
+    <div class="timestamp">14:23:07 UTC</div>
+    <div class="log-full-content">
+      <p>The feedback loops are oscillating at 0.3–0.7Hz. Need to adjust the LFO mapping to avoid clipping.</p>
+      <p>Tested three glitch methods:<br>
+      1. Pixel sorting — too predictable<br>
+      2. Datamoshing — works but requires I-frame removal<br>
+      3. Analog interference overlay — best result</p>
+      <p>Next step: Export at 24fps, apply LUT from 2026-04-18 session.</p>
+      <p><a href="#">[permalink]</a> | <a href="#">[edit]</a> | <span class="wiki-contrib">user: kino_rezhisser</span></p>
+    </div>
+  </div>
+
+  <div class="log-full-entry">
+    <div class="log-full-title">2026-04-22 — Asset digitization: MiniDV transfer</div>
+    <div class="timestamp">09:47:12 UTC</div>
+    <div class="log-full-content">
+      <p>Pulled 14 miniDV tapes from 2009–2012. Footage includes:<br>
+      - B-roll from abandoned buildings (2010)<br>
+      - Interview outtakes (2011)<br>
+      - Glitched frames from degraded tape (2009)</p>
+      <p>Color grading notes: crushed blacks, lifted midtones, added 8% grain.</p>
+      <p><a href="#">[permalink]</a> | <a href="#">[edit]</a> | <span class="wiki-contrib">user: archive_bot</span></p>
+    </div>
+  </div>
+
+  <div class="log-full-entry">
+    <div class="log-full-title">2026-04-20 — Codec migration to H.264</div>
+    <div class="timestamp">18:12:44 UTC</div>
+    <div class="log-full-content">
+      <p>Encoding all new exports with H.264 at 10mbps. QuickTime reference files stored locally.</p>
+      <p>Old codec (MJPEG) deprecated. Files from 2024-2025 marked for re-encoding.</p>
+      <p><a href="#">[permalink]</a> | <a href="#">[edit]</a> | <span class="wiki-contrib">status: complete</span></p>
+    </div>
+  </div>
+</div>
+
+<div class="liveleak-footer">
+  <span>47 log entries total — showing most recent 3 — <a href="#">view all</a></span>
+</div>
+
+</body>
+</html>
